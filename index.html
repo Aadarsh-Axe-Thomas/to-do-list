@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="style.css">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Card</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+  <div id="card">
+    <div id="card-content">
+      <div id="card-title">
+        <h2>LOGIN</h2>
+        <div class="underline-title"></div>
+      </div>
+      <form action="todo.html" onsubmit="return validate()">
+        <p id="error">  </p>
+        <label for="user-email" style="padding-top:13px">
+            &nbsp;Email
+          </label>
+        <br>
+        <input id="user-email" class="form-content" name="email" autocomplete="on" required />
+        <div class="form-border"></div>
+        <br>
+        <label for="user-password" style="padding-top:22px">&nbsp;Password
+          </label>
+        <input id="user-password" class="form-content" type="password" name="password" required />
+        <div class="form-border"></div>
+        <a href="#">
+            <br>
+          <legend id="forgot-pass">Forgot password?</legend>
+        </a>
+        <input id="submit-btn" type="submit" name="submit" value="LOGIN" />
+        <br>
+        <a href="#" id="signup">Don't have account yet?</a>
+        
+      </form>
+    </div>
+  </div>
+
+
+
+  <script src="index.js"></script>
+</body>
+
+</html>
